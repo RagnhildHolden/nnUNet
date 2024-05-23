@@ -130,14 +130,14 @@ class CustomnnUNetTrainer(nnUNetTrainer):
         self.initial_lr = 1e-2
         self.weight_decay = 3e-5
         self.oversample_foreground_percent = 0.33
-        self.num_iterations_per_epoch = 10
-        self.num_val_iterations_per_epoch = 2
-        self.num_epochs = 10
+        self.num_iterations_per_epoch = 28
+        self.num_val_iterations_per_epoch = 7
+        self.num_epochs = 1000
         self.current_epoch = 0
         self.enable_deep_supervision = True
         self.use_early_stopping = True
         self.early_stop = False
-        self.early_stop_patience = 1
+        self.early_stop_patience = 30
         self.last_best_epoch = 0
 
         ### Dealing with labels/regions
